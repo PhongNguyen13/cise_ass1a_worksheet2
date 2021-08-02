@@ -34,6 +34,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       # Runs a set of commands using the runners shell
+      - name: Go down one level
+        run: cd frontend
+      
       - name: Install dependencies
         run: npm install
         
